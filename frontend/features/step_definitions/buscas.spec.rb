@@ -11,7 +11,7 @@ When('usuario pesquisa por uma marca e o modelo') do
   end
   
   When('usuario pesquisa por uma versao especifica de um veículo') do
-    @busca.BuscaVersao();
+    @busca.BuscaVersao(DATA['versao']);
   end
 
   Then('a pesquisa retorna os veiculos encontrados de acordo com a versão informada') do

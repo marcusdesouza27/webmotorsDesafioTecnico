@@ -25,11 +25,11 @@ class BuscaPage < SitePrism::Page
         searchButton.click;
     end
 
-    def BuscaVersao
+    def BuscaVersao(versao)
         wait_until_menuVersoes_visible
         menuVersoes.click;
         wait_until_inputVersao_visible
-        inputVersao.send_keys('1.5 LX 16V FLEX 4P AUTOMÁTICO')
+        inputVersao.send_keys(versao)
         wait_until_versaoResultado_visible
         versaoResultado.click;
     end
